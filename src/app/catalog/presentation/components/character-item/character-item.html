@@ -1,0 +1,21 @@
+<mat-card class="character-card" appearance="outlined">
+  <img mat-card-image [alt]="character().name" [src]="character().image"/>
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ character().name }}</mat-card-title>
+      <mat-card-subtitle>{{ character().status }} - {{ character().species }}</mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    <p> {{ character().type }}</p>
+    <p> {{ character().gender }}</p>
+  </mat-card-content>
+  <mat-card-actions class="actions-sections">
+    <a [href]="character().url" class="action-button" color="primary"
+       mat-raised-button
+       target="_blank">{{ 'character.url' | translate }}</a>
+  </mat-card-actions>
+  <mat-card-footer>
+    <p> {{  character().created | date:'short' }}</p>
+  </mat-card-footer>
+</mat-card>

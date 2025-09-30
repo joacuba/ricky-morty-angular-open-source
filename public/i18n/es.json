@@ -1,0 +1,12 @@
+{
+  "header": {
+    "store": "Tienda de Cartoons"
+  },
+  "character": {
+    "url": "Ver URL"
+  },
+  "footer": {
+    "copy": "© 2025 Fake Store. Todos los derechos reservados.",
+    "by": "Desarrollado por {name} {lastname} {code}"
+  }
+}

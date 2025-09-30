@@ -1,0 +1,16 @@
+export interface CharacterResponse {
+  results: CharacterResource[];
+
+}
+
+export interface CharacterResource {
+  id: number;
+  name: string;
+  status: string;
+  species: string;
+  type: string;
+  gender: string;
+  image: string;
+  url: string;
+  created: string;
+}

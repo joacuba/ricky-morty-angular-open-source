@@ -10,6 +10,16 @@ To start a local development server, run:
 ng serve
 ```
 
+For this specific project, you need to add these dependencies:
+
+```bash
+ng add @angular/material
+```
+
+```bash
+npm i @ngx-translate/core @ngx-translate/http-loader
+```
+
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## Code scaffolding
@@ -17,7 +27,31 @@ Once the server is running, open your browser and navigate to `http://localhost:
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
 ```bash
-ng generate component component-name
+ng generate components components-name
+```
+
+For generate a class of type entity run:
+
+```bash
+ng g cl entity-name --type entity
+```
+
+Fro generate a class in the domain application layer run:
+
+```bash
+npx ng g cl catalog --type store
+```
+
+For generate component in the infrastructure layer run:
+
+```bash
+npx ng g c layout
+```
+
+For generate a standalone component run:
+
+```bash
+npx ng g c layout --standalone
 ```
 
 For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:

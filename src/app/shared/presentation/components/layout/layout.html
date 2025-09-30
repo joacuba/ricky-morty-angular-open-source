@@ -1,0 +1,7 @@
+<nav class="navbar">
+  <h2>{{ 'header.store' | translate }}</h2>
+  <app-language-switcher/>
+</nav>
+<section class="section">
+  <app-character-list [characters]="characters()" class="characters"/>
+</section>
