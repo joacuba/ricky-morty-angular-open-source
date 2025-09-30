@@ -7,6 +7,6 @@
   },
   "footer": {
     "copy": "© 2025 Fake Store. All rights reserved.",
-    "by": "Developed by {name} {lastname} {code}"
+    "by": "Developed by {{ name }} {{ lastname }} {{ code }}"
   }
 }

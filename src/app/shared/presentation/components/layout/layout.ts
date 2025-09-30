@@ -3,13 +3,15 @@ import {CatalogStore} from '../../../../catalog/application/catalog.store';
 import {LanguageSwitcher} from '../language-switcher/language-switcher';
 import {CharacterList} from '../../../../catalog/presentation/components/character-list/character-list';
 import {TranslatePipe} from '@ngx-translate/core';
+import {Footer} from '../footer/footer';
 
 @Component({
   selector: 'app-layout',
   imports: [
     LanguageSwitcher,
     CharacterList,
-    TranslatePipe
+    TranslatePipe,
+    Footer
   ],
   templateUrl: './layout.html',
   standalone: true,
